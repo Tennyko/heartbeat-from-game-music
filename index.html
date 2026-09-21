@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Heartbeat from Game Music: a research prototype transforming a game's own soundtrack into heartbeat-paced sound.">
+<title>Heartbeat from Game Music</title>
+<style>
+:root{color-scheme:light;--ink:#163a45;--teal:#126d79;--muted:#536970;--line:#cbdcdd}*{box-sizing:border-box}body{margin:0;background:#f4f7f4;color:var(--ink);font:17px/1.6 system-ui,sans-serif}main{max-width:960px;margin:auto;padding:36px 24px 60px}header{border-top:5px solid var(--teal);padding-top:20px}h1{font-size:clamp(2.2rem,6vw,3.7rem);line-height:1.08;letter-spacing:-.035em;margin:16px 0}h2{font-size:1.5rem;line-height:1.25;margin:0 0 12px}h3{font-size:1.08rem}p{margin:10px 0}.eyebrow{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:700}.meta,footer{color:var(--muted);font-size:.9rem}.lead{font-size:1.2rem;max-width:750px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:26px;margin-top:24px}.flow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-weight:650;margin:22px 0}.flow span{padding:10px 14px;background:#e5eeee;border-radius:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}a{color:var(--teal);text-underline-offset:3px}a:focus-visible,summary:focus-visible{outline:3px solid #c65d3c;outline-offset:4px}details{margin-top:24px;border-top:1px solid var(--line);padding-top:18px}summary{cursor:pointer;font-weight:650}li{margin:8px 0}footer{margin-top:28px}video{width:100%;background:#10232e;border-radius:6px}.status{border-left:3px solid var(--teal);padding:8px 16px;background:#f1f6f6}@media(max-width:620px){main{padding:24px 16px 40px}.card{padding:20px}.grid{grid-template-columns:1fr;gap:8px}}
+</style>
+<main>
+<header><div class="eyebrow">SIGGRAPH Asia 2026 · Accepted poster</div><h1>Heartbeat from Game Music</h1><p class="lead">What if a game's own soundtrack gradually became a heartbeat paced by the player's heart rate?</p><p>In-Place Audio Morphing Driven by the Player’s Heart Rate</p><p class="meta">Yuxin Liu · Akari Shimabukuro · Kosuke Shimizu · Keiichi Zempo<br>University of Tsukuba</p></header>
+<section class="card" aria-labelledby="demo-title"><h2 id="demo-title">Listen to the transformation</h2>
+<!-- DEMO START -->
+<p class="status">The project page is now open. Public audio demonstrations are being prepared.</p><p class="meta">Demonstrations will appear here at this same address. Last updated: 22 September 2026.</p>
+<!-- DEMO END -->
+</section>
+<section class="card"><h2>The idea</h2><p>We transform the game's own music across tempo, spectrum and rhythmic structure, using heart-rate input to guide the transition toward heartbeat-paced sound.</p><div class="flow" aria-label="Game music transforms continuously into heartbeat-paced sound"><span>Game music</span>→<span>Continuous transformation</span>→<span>Heartbeat-paced sound</span></div><p class="meta">The reported prototype uses recorded heart-rate input and offline audio rendering.</p></section>
+<section class="card"><h2>Potential applications</h2><div class="grid"><div><h3>In-game immersion &amp; tension</h3><p>Explore heartbeat-integrated soundtracks in tense gameplay, such as horror games.</p></div><div><h3>Post-game wind-down</h3><p>Explore a transition from gameplay to meditation through the transformed soundtrack.</p></div></div><p class="meta">These are application concepts. Effects on immersion, tension and relaxation have not been evaluated.</p></section>
+<section class="card"><h2>What we evaluated</h2><p>Across 18 public heart-rate traces and one music track, the selected beat-lock setting reduced the median heartbeat-to-musical-beat onset gap from 172 ms to 34 ms, at 2.8% rate deviation.</p><p class="meta">These are offline, signal-level results. They do not establish perceptual fusion or listener benefits.</p></section>
+<details><summary>Selected references</summary><ol>
+<li>Shimabukuro, Ezaki &amp; Zempo (2025). Meditation Support System Utilizing Pseudo-Heartbeat Auditory Feedback to Enhance Cardiac Interoceptive Awareness. AHs ’25. <a href="https://doi.org/10.1145/3745900.3746096">DOI</a></li>
+<li>Schmidt et al. (2018). WESAD: A Multimodal Dataset for Wearable Stress and Affect Detection. ICMI.</li>
+<li>Healey &amp; Picard (2005). Detecting Stress During Real-World Driving Tasks. Driving-stress recordings (drivedb).</li>
+<li>Drake &amp; Botte (1993). Tempo Sensitivity in Auditory Sequences: Evidence for a Multiple-Look Model. Perception &amp; Psychophysics 54, 277–286.</li>
+<li>Danielsen et al. (2026). All About That Bass Drum? Asynchrony Effects on the Perceived Timing of Compound Musical Sounds. Annals of the New York Academy of Sciences. <a href="https://doi.org/10.1111/nyas.70306">DOI</a></li>
+</ol></details>
+<footer>Project page · Updated 22 September 2026.<br>This address will remain the poster’s entry point as demonstrations are updated. Submission materials and later versions will be labelled separately.</footer>
+</main>
+</html>
