@@ -1,35 +1,104 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ARE Listening Library · Tennyko</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="desk-pages.css">
-  <link rel="stylesheet" href="public.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heartbeat from Game Music · Tennyko</title>
+<link rel="stylesheet" href="listening.css">
 </head>
-<body class="desk-page">
-  <header class="desk-header">
-    <a class="wordmark" href="index.html" aria-label="Back to Sound Desk">tennyko<span class="wordmark-dot">.</span></a>
-    <nav aria-label="Sound Desk"><a href="index.html">Sound Desk</a><a href="listening.html" aria-current="page">Listening Library</a><a href="project.html">About ARE</a></nav>
-  </header>
-  <main>
-    <div class="desk-page-title">
-      <div><h1>Listening Library</h1><p>Listen to how the game soundtrack becomes a heartbeat.</p></div>
-    </div>
-    <section class="desk-section" aria-labelledby="examples">
-      <h2 id="examples">Full-length audio examples</h2>
-      <video class="release-video" controls playsinline preload="none" aria-labelledby="examples" src="media/audio-examples.mp4"></video>
-      <p>Listen for the low double thump as the music recedes, then follow each beat as the heartbeat takes over.</p>
-      <p class="desk-project-link"><a href="media/audio-examples.mp4">Open the audio examples directly</a></p>
-    </section>
-    <section class="desk-section" aria-labelledby="overview">
-      <h2 id="overview">Poster demo</h2>
-      <p>The short demo introduces the project and lets you hear the transition in context.</p>
-      <p class="desk-project-link"><a href="index.html#listening">Watch the poster demo</a></p>
-    </section>
-    <p>Music: <a class="underlined" href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0.</p>
-    <p class="desk-project-link"><a href="index.html">Back to Sound Desk</a></p>
-  </main>
-</body>
-</html>
+<body>
+<header><a href="index.html" aria-label="Back to Sound Desk">tennyko<span>.</span></a><small>ARE LISTENING LIBRARY</small></header>
+<main>
+<div class="lead"><h1>Heartbeat from Game Music</h1>
+<p>What if a game’s own soundtrack could follow the player’s heart rate? ARE gradually changes the music’s pace and sound, making room for a heartbeat. We started with a few examples for our poster and are building a listening library across different kinds of game music.</p></div>
+<nav aria-label="Listening guide"><a href="#demo">Poster videos</a><a href="#start">Explore the tracks</a><a href="#notes">Research plans</a><a href="project.html">About ARE</a></nav>
+<details class="watch listen-module" id="demo">
+<summary>Watch the poster demo · 1 min 32 sec</summary>
+<video controls playsinline preload="none" aria-label="Submitted poster demonstration" src="media/poster-demo.mp4"></video>
+<small><a href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0</small>
+</details>
+<details class="watch listen-module" id="full-examples">
+<summary>Watch the full-length audio examples · 17 min</summary>
+<video controls playsinline preload="none" aria-label="Submitted full-length audio examples" src="media/audio-examples.mp4"></video>
+<small><a href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0</small>
+</details>
+<section class="listen-module" aria-labelledby="start">
+<small class="clip-topic">CHIPTUNE TRANSITION</small>
+<h2 id="start">When does the heartbeat take the lead?</h2>
+<p>Tap along with the game music. Around 16 seconds in, listen for the low thump. Keep tapping and notice which sound carries the beat toward the end.</p>
+<div class="track"><span class="track-title" id="morph-title">Continuous transition · 36 seconds</span><audio id="morph" aria-labelledby="morph-title" controls preload="metadata" src="media/listening/poster-morph.mp3"></audio></div>
+<p><small><a href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0</small></p>
+<small>Headphones help with the low heartbeat sound.</small></section>
+<section class="listen-module" aria-labelledby="beat"><small class="clip-topic">BEAT ALIGNMENT</small>
+<h2 id="beat">Same passage. Where does the heartbeat land?</h2>
+<p>Tap the musical beat through both takes. For the first four seconds, timing correction is off. At 0:04 the passage repeats with correction on. Listen for the thump moving closer to your tap.</p>
+<div class="track"><span class="track-title" id="timing-title">Timing off → on · 8 seconds</span><audio id="timing" aria-labelledby="timing-title" controls preload="metadata" src="media/listening/poster-off-on.mp3"></audio></div>
+<p><small><a href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0</small></p>
+<details><summary>Hear each 12-second take separately</summary>
+<div class="pair">
+<div class="track"><span class="track-title" id="off-title">Correction off</span><audio id="off" aria-labelledby="off-title" controls preload="none" src="media/listening/audio_beatlock_OFF_S13.wav"></audio></div>
+<div class="track"><span class="track-title" id="on-title">Correction on</span><audio id="on" aria-labelledby="on-title" controls preload="none" src="media/listening/audio_beatlock_ON_S13.wav"></audio></div>
+</div></details>
+</section>
+<section class="listen-module" aria-labelledby="library">
+<small class="clip-topic">PIANO TRANSITION</small>
+<h2 id="library">Slowpiano · From piano to heartbeat</h2>
+<p>Pick out the piano rhythm at the start. As the phrase slows down, listen for the low double thump underneath. Which sound are you following by the end?</p>
+<div class="track"><span class="track-title" id="piano-full-title">Full transition · 42 seconds</span><audio id="piano-full" aria-labelledby="piano-full-title" controls preload="metadata" src="media/listening/piano-morph.mp3"></audio></div>
+<p><small>Slowpiano by celestialghost8 · <a href="https://opengameart.org/content/cc0-scraps">Original music in CC0 Scraps</a></small></p>
+<small>Headphones help with the low heartbeat sound. This recording uses a preset transition.</small>
+<details><summary>Compare with the original piano phrase</summary>
+<div class="track"><span class="track-title" id="piano-title">Original piano phrase · 36 seconds</span><audio id="piano" aria-labelledby="piano-title" controls preload="none" src="media/listening/piano-original.mp3"></audio></div>
+</details>
+</section>
+<section class="listen-module" aria-labelledby="mix"><small class="clip-topic">MIX BALANCE · SWEPT UP</small>
+<h2 id="mix">How much of the music should stay?</h2>
+<p>Follow the tune behind the heartbeat. Both takes use the same 12 seconds and the same tempo changes. The setting changes how far the music recedes.</p>
+<div class="pair">
+<div class="track"><span class="track-title" id="light-title">More music stays</span><audio id="light" aria-labelledby="light-title" controls preload="none" src="media/listening/swept-light.mp3"></audio></div>
+<div class="track"><span class="track-title" id="strong-title">Music recedes further</span><audio id="strong" aria-labelledby="strong-title" controls preload="none" src="media/listening/swept-strong.mp3"></audio></div>
+</div>
+<small><a href="https://opengameart.org/content/swept-up">Swept Up</a> by Indieteur · CC0</small>
+</section>
+<section aria-labelledby="notes">
+<h2 id="notes">What we plan to test next</h2>
+<h3>How smooth is the transition?</h3>
+<p>We plan to compare ARE with a simple crossfade, where the music fades down as the heartbeat fades in. Each listener would hear one version of each of six tracks. We’ll vary which version people hear for each track and ask them to rate how continuous the change sounds and how clearly they can hear the heartbeat.</p>
+<h3>Could it fit a quiet moment in a game?</h3>
+<p>We’d like to try a gradual transition in a rest area after an intense sequence. We could compare the same scene with and without the transition and ask players whether it helps them unwind or pulls their attention away.</p>
+<h3>Could it make play feel more immersive?</h3>
+<p>In a later game prototype, we’d like to compare a soundtrack that responds to the player’s heart rate with a preset version of the same soundtrack. We want to find out when the response makes the scene feel more involving and when the heartbeat becomes distracting.</p>
+</section>
+</main><footer><small>LIU YUXIN 刘宇芯 &nbsp;/&nbsp; ARE</small><a href="index.html">Back to Sound Desk</a></footer>
+<script>
+const players = document.querySelectorAll('audio, video');
+for (const player of players) {
+  player.addEventListener('play', () => {
+    if (player.paused) return;
+    for (const other of players) {
+      if (other === player) continue;
+      other.pause();
+      other.removeAttribute('data-playing');
+    }
+    player.setAttribute('data-playing', '');
+  });
+  for (const event of ['pause', 'ended', 'error']) {
+    player.addEventListener(event, () => {
+      if (event !== 'pause' || player.paused) player.removeAttribute('data-playing');
+    });
+  }
+  player.closest('details')?.addEventListener('toggle', (event) => {
+    if (!event.currentTarget.open) player.pause();
+  });
+  player.addEventListener('error', () => {
+    const message = document.createElement('p');
+    message.setAttribute('role','status');
+    const link = document.createElement('a');
+    link.href = player.src;
+    link.textContent = 'Open the media file directly';
+    message.append('Playback unavailable. ',link);
+    player.after(message);
+  }, {once:true});
+}
+</script>
+</body></html>
