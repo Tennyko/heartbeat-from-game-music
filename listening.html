@@ -4,13 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Heartbeat from Game Music · Tennyko</title>
-<link rel="stylesheet" href="listening.css">
+<link rel="stylesheet" href="listening.css?v=20261127-headphones">
 </head>
 <body>
 <header><a href="index.html" aria-label="Back to Sound Desk">tennyko<span>.</span></a><small>ARE LISTENING LIBRARY</small></header>
 <main>
-<div class="lead"><h1>Heartbeat from Game Music</h1>
-<p>What if a game’s own soundtrack could follow the player’s heart rate? ARE gradually changes the music’s pace and sound, making room for a heartbeat. We started with a few examples for our poster and are building a listening library across different kinds of game music.</p></div>
+<div class="lead">
+  <div><h1>Heartbeat from Game Music</h1>
+  <p>What if a game’s own soundtrack could follow the player’s heart rate? ARE gradually changes the music’s pace and sound, making room for a heartbeat. We started with a few examples for our poster and are building a listening library across different kinds of game music.</p></div>
+  <aside class="headphone-guide" aria-labelledby="headphone-heading">
+    <h2 id="headphone-heading">Headphones on</h2>
+    <div class="headphone-compare">
+      <figure>
+        <img class="mascot-without-headphones" src="assets/pixel/desk-mascot.png" alt="" width="48" height="60">
+        <figcaption><span aria-hidden="true">×</span> Without headphones<small>Heartbeat is harder to hear</small></figcaption>
+      </figure>
+      <figure class="headphone-preferred">
+        <img src="assets/pixel/desk-mascot.png" alt="" width="48" height="60">
+        <figcaption><span aria-hidden="true">✓</span> With headphones<small>Heartbeat is easier to hear</small></figcaption>
+      </figure>
+    </div>
+    <p>Start low and turn it up gradually. Keep device volume below 60%.</p>
+  </aside>
+</div>
 <nav aria-label="Listening guide"><a href="#demo">Poster videos</a><a href="#start">Explore the tracks</a><a href="#notes">Research plans</a><a href="project.html">About ARE</a></nav>
 <details class="watch listen-module" id="demo">
 <summary>Watch the poster demo · 1 min 32 sec</summary>
@@ -28,7 +44,7 @@
 <p>Tap along with the game music. Around 16 seconds in, listen for the low thump. Keep tapping and notice which sound carries the beat toward the end.</p>
 <div class="track"><span class="track-title" id="morph-title">Continuous transition · 36 seconds</span><audio id="morph" aria-labelledby="morph-title" controls preload="metadata" src="media/listening/poster-morph.mp3"></audio></div>
 <p><small><a href="https://opengameart.org/content/5-chiptunes-action">Level 1</a> by Juhani Junkala (SubspaceAudio) · CC0</small></p>
-<small>Headphones help with the low heartbeat sound.</small></section>
+</section>
 <section class="listen-module" aria-labelledby="beat"><small class="clip-topic">BEAT ALIGNMENT</small>
 <h2 id="beat">Same passage. Where does the heartbeat land?</h2>
 <p>Tap the musical beat through both takes. For the first four seconds, timing correction is off. At 0:04 the passage repeats with correction on. Listen for the thump moving closer to your tap.</p>
@@ -46,7 +62,7 @@
 <p>Pick out the piano rhythm at the start. As the phrase slows down, listen for the low double thump underneath. Which sound are you following by the end?</p>
 <div class="track"><span class="track-title" id="piano-full-title">Full transition · 42 seconds</span><audio id="piano-full" aria-labelledby="piano-full-title" controls preload="metadata" src="media/listening/piano-morph.mp3"></audio></div>
 <p><small>Slowpiano by celestialghost8 · <a href="https://opengameart.org/content/cc0-scraps">Original music in CC0 Scraps</a></small></p>
-<small>Headphones help with the low heartbeat sound. This recording uses a preset transition.</small>
+<small>This recording uses a preset transition.</small>
 <details><summary>Compare with the original piano phrase</summary>
 <div class="track"><span class="track-title" id="piano-title">Original piano phrase · 36 seconds</span><audio id="piano" aria-labelledby="piano-title" controls preload="none" src="media/listening/piano-original.mp3"></audio></div>
 </details>
@@ -73,6 +89,7 @@
 <script>
 const players = document.querySelectorAll('audio, video');
 for (const player of players) {
+  player.volume = 0.5;
   player.addEventListener('play', () => {
     if (player.paused) return;
     for (const other of players) {

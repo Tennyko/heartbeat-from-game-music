@@ -98,7 +98,7 @@ document.querySelector('#mute-toggle').addEventListener('click', () => {
   document.querySelector('#mute-toggle').setAttribute('aria-label', audio.muted ? 'Unmute' : 'Mute');
   document.querySelector('#volume-icon').src = 'assets/icons/' + (audio.muted ? 'volume-x' : 'volume-2') + '.svg';
 });
-audio.volume = 0.65;
+audio.volume = 0.5;
 
 function applyMotionPreference() {
   document.body.classList.toggle('reduce-motion', motionReduced);
